@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Self Employed Tax Calculator</title>
+  </head>
+
+  <!-- ADD FONTS -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- STYLE SHEET -->
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <body>
+
+    <!-- TITLE 
+
+    <form>
+      <div class="title"><h1>How much Self Employed Tax do you owe?</h1></div>
+
+        <div class="valueinputtitle"><h2>Enter your salary from Employed work:</h2></div>
+        <div class="valueinput">
+          <span class="valueinputpoundsbox">
+            <span class="valueinputpounds">£</span>
+          </span>
+          <input type="text" id="userEmployedSalary" class="valueinputenter" placeholder="Enter Value">
+          </div>
+
+          <br><br> -->
+
+        <form class="canvas">
+
+        	<h1>How much Self Employed Tax will you owe?</h1><br>
+
+		<div class="line">
+
+          <div class="container one">
+
+          	<div class="inputtitle one"><h2>Employed Salary:</h2></div>
+          	<div class="outer one">
+            	<div class="pounds"><span class="poundsymbol">£</span></div>
+            	<div class="money"><input type="text" id="userEmployedSalary" class="inputamount" placeholder="Enter Value"></div>
+          	</div>
+
+     	 </div>
+
+     	 <div class="container two">
+
+     	  	<div class="inputtitle two"><h2>Self Employed Income:</h2></div>
+         	<div class="outer two">
+            	<div class="pounds"><span class="poundsymbol">£</span></div>
+            	<div class="money"><input type="text" id="userSelfEmployedIncome" class="inputamount" placeholder="Enter Value"></div>
+          	</div>
+
+         </div>
+
+        </div>
+
+
+        <hr>
+
+        <div class="checkline">
+
+        	<div class="checkcontainer one">
+
+      		<label class="check" ><h2>Student Loan Plan 1</h2>
+    			<input type="checkbox"  class="form-check-input" id="studentLoanPlan1">
+  				<span class="checkmark"></span>
+			</label>
+
+			</div>
+
+			<div class="checkcontainer one">
+
+			<label class="check"><h2>Student Loan Plan 2</h2>
+    			<input type="checkbox"  class="form-check-input" value="" id="studentLoanPlan2">
+  				<span class="checkmark"></span>
+			</label>
+
+			</div>
+
+		</div>
+
+    <div class="checkline">
+
+          <div class="checkcontainer one">
+
+          <label class="check"><h2>Started after April 6th 2020?</h2>
+          <input type="checkbox"  class="form-check-input" value="" id="startedThisYear">
+          <span class="checkmark"></span>
+      </label>
+
+      </div>
+
+            <div class="checkcontainer two">
+
+      <input type="date" id="userStartDate" value="2020-04-06" min="2020-04-06" max="2021-04-05">
+
+    </div>
+
+  </div>
+
+  <div class="checkline">
+
+          <div class="checkcontainer one">
+
+          <label class="check"><h2>Ending before April 5th 2021?</h2>
+          <input type="checkbox"  class="form-check-input" value="" id="endedThisYear">
+          <span class="checkmark"></span>
+      </label>
+
+      </div>
+
+      <div class="checkcontainer two">
+
+      <input type="date" id="userEndDate" value="2020-04-06" min="2020-04-06" max="2021-04-05">
+
+    </div>
+
+  </div>
+
+    <br>
+    <br>
+  
+
+
+ <hr>
+ <br>
+
+    <div class="line">
+
+          <div class="container one">
+
+            <div class="inputtitle one"><h2>Tax (Just SE):</h2></div>
+            <div class="outer3 one">
+              <div class="pounds3"><span class="poundsymbol">£</span></div>
+              <div class="money"><input type="text" id="selfEmployedTax" class="inputamount" placeholder="0.00"></div>
+            </div>
+
+       </div>
+       
+       <div class="container two">
+
+          <div class="inputtitle three"><h2>Student Loan (Just SE):</h2></div>
+          <div class="outer3 two">
+              <div class="pounds3"><span class="poundsymbol">£</span></div>
+              <div class="money"><input type="text" id="selfEmployedStudentLoan" class="inputamount" placeholder="0.00"></div>
+            </div>
+
+         </div>
+
+        </div>
+
+        <br>
+
+        <div class="line">
+
+          <div class="container one">
+
+            <div class="inputtitle one"><h2>National Insurance 4:</h2></div>
+            <div class="outer3 one">
+              <div class="pounds3"><span class="poundsymbol">£</span></div>
+              <div class="money"><input type="text" id="nationalInsurance4" class="inputamount" placeholder="0.00"></div>
+            </div>
+
+       </div>
+       
+       <div class="container two">
+
+          <div class="inputtitle four"><h2>National Insurance 2:</h2></div>
+          <div class="outer3 two">
+              <div class="pounds3"><span class="poundsymbol">£</span></div>
+              <div class="money"><input type="text" id="nationalInsurance2" class="inputamount" placeholder="0.00"></div>
+            </div>
+
+         </div>
+
+        </div>
+
+        <br>
+
+         <div class="line">
+
+        <div class="container one">
+
+            <div class="inputtitle one"><h2>Total SE Taxes to Pay:</h2></div>
+            <div class="outer2 one">
+              <div class="pounds2"><span class="poundsymbol">£</span></div>
+              <div class="money"><input type="text" id="totalSeTaxToPay" class="inputamount" placeholder="0.00"></div>
+            </div>
+
+       </div>
+
+     </div>
+
+
+    </form>
+<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,290 @@
+#userStartDate {
+	display: none;
+	padding-top: 0em;
+	margin-top: 12px;
+}
+
+#userEndDate {
+	display: none;
+	padding-top: 0em;
+	margin-top: 12px;
+}
+
+-webkit-appearance: none;
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input {
+	background-color: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+form h1 {
+	font-family: 'Heebo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 15px auto auto 30px;
+
+}
+
+form {
+	width: 600px;
+	min-width: 350px;
+	height: 640px;
+	margin: auto;
+	background-color: #efeded;
+	border-top: 4px solid #ef60c7;
+}
+
+
+.line {
+	width: 450px;
+	height: 70px;
+	margin: 0px auto 0px 30px;
+
+}
+
+.checkline {
+	width: 380px;
+	height: 35px;
+	margin: 0px auto 0px 30px;
+
+}
+
+
+.container {
+	width: 225px;
+	max-width: 300px;
+	height: 70px;
+}
+
+.checkcontainer {
+	max-width: 300px;
+}
+
+.one {
+	float: left;
+}
+
+.two {
+	float: right;
+}
+
+.three {
+	float: right;
+}
+
+.four{
+	float: right;
+}
+
+.inputtitle h2 {
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0px 0px 0px 5px;
+}
+
+.inputtitle.two {
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0px 40px 0px 0px;
+}
+
+.inputtitle.three {
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0px 35px 0px 0px;
+}
+
+.inputtitle.four {
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0px 50px 0px 0px;
+}
+
+.outer {
+	width: 200px;
+	height: 40px;
+	border-style: solid;
+	border-color: #d6d6d6;
+	border-width: 2px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.outer2 {
+	width: 200px;
+	height: 40px;
+	border-style: solid;
+	border-color: #ef60c7;
+	border-width: 2px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.outer3 {
+	width: 200px;
+	height: 40px;
+	border-style: solid;
+	border-color: #efbde4;
+	border-width: 2px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+
+.outer:active {
+	border-color: #ef60c7;
+}
+
+.outer:focus {
+	border-color: #ef60c7;
+}
+
+.pounds {
+	float: left;
+	width: 50px;
+	height: 40px;
+	background: #d6d6d6;
+}
+
+.pounds2 {
+	float: left;
+	width: 50px;
+	height: 40px;
+	background: #ef60c7;
+}
+
+.pounds3 {
+	float: left;
+	width: 50px;
+	height: 40px;
+	background: #efbde4;
+}
+
+.money {
+	margin-left: 50px
+	height: 40px;
+}
+
+.poundsymbol {
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	color: black;
+	padding: 0px 20px;
+	vertical-align: middle;
+	line-height: 40px
+}
+
+.inputamount {
+	width: 110px;
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	color: black;
+	padding: 0px 20px;
+	vertical-align: middle;
+	line-height: 40px;
+	border-width: 0;
+	border-color: none;
+	background-color: none;
+}
+
+/* The check */
+.check {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check input {
+	display: inline;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff ;
+    border-color:#d6d6d6;
+    border-style:solid;
+    border-width:2px;
+}
+
+.check h2 {
+	font-family: 'Heebo', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 18px;
+	padding: 6px;
+}
+
+hr {
+	display: block;
+	margin: 25px 10px 10px 10px;
+	height: 1px;
+	background-color: #d6d6d6;
+	border: none;
+}
+
+
+
+/* When the checkbox is checked, add a change background */
+.check input:checked ~ .checkmark {
+    background-color: #fff  ;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid;
+    border-color:#ef60c7;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
